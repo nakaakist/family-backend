@@ -32,6 +32,13 @@ resources:
           - email
         AdminCreateUserConfig:
           AllowAdminCreateUserOnly: True
+        Policies:
+          PasswordPolicy:
+            MinimumLength: 8
+            RequireLowercase: False
+            RequireNumbers: False
+            RequireSymbols: False
+            RequireUppercase: False
 
     UserPoolClient:
       Type: AWS::Cognito::UserPoolClient
