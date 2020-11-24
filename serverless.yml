@@ -119,3 +119,7 @@ resources:
       Description: 'Cognito User Pool Client Id'
       Value:
         Ref: UserPoolClient
+    IdentityPoolId:
+      Description: 'Cognito Identity Pool Id'
+      Value:
+        Ref: IdentityPool
